@@ -1,18 +1,26 @@
 import cn from "classnames"
 import { useFormikContext } from "formik"
 import React from "react"
+import arcade_icon from "../../assets/images/icon-arcade.svg"
+import advanced_icon from "../../assets/images/icon-advanced.svg"
+import pro_icon from "../../assets/images/icon-pro.svg"
 
 type Props = {
-  image?: any
   plan: string
   cost: string
   duration: string
 }
 
-const PlanCard = ({ image, plan, cost, duration }: Props) => {
+const PlanCard = ({ plan, cost, duration }: Props) => {
   const { setFieldValue } = useFormikContext()
+  const icon =
+    plan === "Arcade"
+      ? arcade_icon
+      : plan === "Advanced"
+      ? advanced_icon
+      : pro_icon
   const customClass = {
-    root: "p-3 border border-gray-300 rounded-lg lg:w-1/3 lg:h-52 cursor-pointer hover:border-purplish-blue hover:bg-agnolia ",
+    root: "p-3 lg:pt-6 border border-gray-300 rounded-lg lg:w-1/3 lg:h-52 cursor-pointer hover:border-purplish-blue hover:bg-agnolia flex gap-4 lg:flex-col lg:justify-between",
     active: "border-marine-blue bg-light-blue",
   }
 
@@ -23,11 +31,10 @@ const PlanCard = ({ image, plan, cost, duration }: Props) => {
         setFieldValue("plan", plan)
       }}
     >
-      {image && (
-        <div>
-          <img src={image} alt="plan" />
-        </div>
-      )}
+      <div>
+        <img src={icon} alt="plan" />
+      </div>
+
       <div>
         <p className=" text-heading mb-1">{plan}</p>
         <p className="text-body text-sm mb-1 ">{cost}</p>

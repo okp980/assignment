@@ -12,7 +12,7 @@ const classes = {
 
 const Navigation = ({ currentStep }: Props) => {
   return (
-    <div className="bg-purplish-blue h-40 fixed top-0 left-0 w-full lg:z-10 lg:bottom-0 lg:w-1/4 lg:h-auto lg:m-4 lg:rounded-lg">
+    <div className="bg-purplish-blue h-40 fixed top-0 left-0 w-full lg:z-10 lg:bottom-0 lg:w-1/4 lg:h-auto lg:m-4 lg:rounded-lg bg-mobile bg-bottom bg-no-repeat bg-cover lg:bg-desktop">
       <div className="flex justify-center lg:mt-20 ">
         <ul className="flex gap-5 mt-6 lg:flex-col lg:gap-9">
           {Array.from(Array(4)).map((item: any, index: number) => (

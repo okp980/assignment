@@ -25,6 +25,10 @@ module.exports = {
         body: "var(--clr-cool-gray)",
         heading: "var(--clr-marine-blue)",
       },
+      backgroundImage: {
+        desktop: "url('assets/images/bg-sidebar-desktop.svg')",
+        mobile: "url('assets/images/bg-sidebar-mobile.svg')",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
