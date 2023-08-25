@@ -33,7 +33,7 @@ const MultiStepForm = (props: Props) => {
         onSubmit={() => console.log("Step1 onSubmit")}
         validationSchema={Yup.object({
           name: Yup.string().required("This field is required"),
-          email: Yup.string().required("This field is required"),
+          email: Yup.string().email().required("This field is required"),
           phone_number: Yup.string().required("This field is required"),
         })}
       >
