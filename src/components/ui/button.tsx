@@ -9,7 +9,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const classes = {
-  root: "inline-flex items-center justify-center flex-shrink-0 font-semibold leading-none rounded-md capitalize font-ubuntu font-normal outline-none transition duration-300 ease-in-out ",
+  root: "inline-flex items-center justify-center flex-shrink-0 leading-none rounded-md capitalize font-ubuntu font-normal outline-none transition duration-300 ease-in-out ",
   normal:
     "bg-marine-blue text-white border border-transparent hover:opacity-25",
   confirm:

@@ -14,7 +14,9 @@ const PlanFormStep = (props: Props) => {
       <ErrorMessage
         name="plan"
         render={(error: string) => (
-          <p className="my-2 text-xs text-strawberry-red text-start">{error}</p>
+          <p className="my-2 text-xs lg:text-base text-strawberry-red text-start">
+            {error}
+          </p>
         )}
       />
       <div className="flex flex-col gap-4 lg:gap-10">

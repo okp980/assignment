@@ -11,20 +11,23 @@ type Props = {
 const Footer = ({ onGoBack, currentStep }: Props) => {
   const { values } = useFormikContext()
   return (
-    <footer className="fixed left-0 right-0 bottom-0 h-20 bg-white lg:bg-transparent flex items-center px-5 justify-between shadow lg:shadow-none lg:z-0">
+    <footer className="fixed w-full right-0 bottom-0 h-20 lg:h-40 bg-white lg:bg-transparent lg:w-1/2 flex items-center lg:left-auto lg:right-40 px-5 justify-between shadow lg:shadow-none lg:z-0">
       <div>
         {currentStep > 1 && (
           <Button
             variant="back"
             type="button"
-            className="text-sm px-5 py-4 mb-0"
+            className="text-sm lg:text-base px-5 py-4 mb-0"
             onClick={() => onGoBack(values as Values)}
           >
             Go Back
           </Button>
         )}
       </div>
-      <Button type="submit" className="text-sm px-5 py-4 mb-0">
+      <Button
+        type="submit"
+        className="text-sm lg:text-base px-5 py-4  lg:px-10 mb-0"
+      >
         Next step
       </Button>
     </footer>
