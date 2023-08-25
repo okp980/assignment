@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { FormStepperProps, Values } from "../../types/form-types"
-import { Form, Formik, FormikHelpers, FormikProps } from "formik"
+import { Form, Formik, FormikHelpers } from "formik"
 import Layout from "../layout/layout"
 import Success from "../success/success"
 
@@ -53,24 +53,7 @@ const FormStepper = ({
             currentStep={stepNumber + 1}
             onGoBack={previous}
           >
-            <>
-              {/* <p>
-                Step {stepNumber + 1} of {totalSteps}
-              </p> */}
-              {submitForm ? <Success /> : step}
-              {/* <div style={{ display: "flex" }}>
-                {stepNumber > 0 && (
-                  <button onClick={() => previous(formik.values)} type="button">
-                    Back
-                  </button>
-                )}
-                <div>
-                  <button disabled={formik.isSubmitting} type="submit">
-                    {isLastStep ? "Submit" : "Next"}
-                  </button>
-                </div>
-              </div> */}
-            </>
+            <>{submitForm ? <Success /> : step}</>
           </Layout>
         </Form>
       )}

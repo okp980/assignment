@@ -1,4 +1,5 @@
 import cn from "classnames"
+import steps from "../../data/steps.json"
 
 type Props = {
   currentStep: number
@@ -15,7 +16,7 @@ const Navigation = ({ currentStep }: Props) => {
     <div className="bg-purplish-blue h-40 fixed top-0 left-0 w-full lg:z-10 lg:bottom-0 lg:w-1/4 lg:h-auto lg:m-4 lg:rounded-lg bg-mobile bg-bottom bg-no-repeat bg-cover lg:bg-desktop">
       <div className="flex justify-center lg:mt-20 ">
         <ul className="flex gap-5 mt-6 lg:flex-col lg:gap-9">
-          {Array.from(Array(4)).map((item: any, index: number) => (
+          {steps.map((item: any, index: number) => (
             <li key={index} className="flex items-center gap-5">
               <div
                 className={cn(classes.root, {
@@ -29,7 +30,7 @@ const Navigation = ({ currentStep }: Props) => {
                 <h4 className="uppercase text-cool-gray text-sm">
                   step {index + 1}
                 </h4>
-                <p className="uppercase text-white text-base"> Your info</p>
+                <p className="uppercase text-white text-base"> {item}</p>
               </div>
             </li>
           ))}

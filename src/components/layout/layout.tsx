@@ -17,7 +17,7 @@ const Layout = ({ children, isSubmitting, currentStep, onGoBack }: Props) => {
   return (
     <div className=" font-ubuntu">
       <Navigation currentStep={currentStep} />
-      <div className="w-full fixed top-24 left-0 h-[450px] lg:h-full lg:ml-48 overflow-y-auto lg:static">
+      <div className="w-full fixed top-20 left-0  lg:h-full lg:ml-48 overflow-y-auto lg:static">
         <LayoutCard
           title={headingInfo.title}
           description={headingInfo.description}

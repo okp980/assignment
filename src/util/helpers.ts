@@ -1,4 +1,3 @@
-import { number } from "yup"
 import { HeaderInfoType } from "../types/form-types"
 import personalInfo from "../data/personal-information.json"
 import planData from "../data/plan.json"
@@ -33,10 +32,8 @@ export const getHeaderInfo = (step: number): HeaderInfoType => {
 }
 
 export const getNumber = (value: string) => {
-  // Using match with regEx
   let matches = value.match(/(\d+)/)
 
-  // Display output if number extracted
   if (matches) {
     return parseInt(matches[0])
   }

@@ -1,6 +1,6 @@
 import React from "react"
 import Toggle from "../ui/toggle"
-import { useField, useFormikContext } from "formik"
+import { useFormikContext } from "formik"
 import cn from "classnames"
 import { Values } from "../../types/form-types"
 
@@ -18,7 +18,6 @@ const CustomToggle = (props: Props) => {
     <div className="flex gap-8 items-center justify-center py-3 rounded-md bg-agnolia">
       <p
         className={cn(classes.root, {
-          //   [classes.normal]: values.duration === "monthly",
           [classes.active]: values.duration === "monthly",
         })}
       >
@@ -33,7 +32,6 @@ const CustomToggle = (props: Props) => {
       />
       <p
         className={cn(classes.root, {
-          //   [classes.normal]: values.duration === "monthly",
           [classes.active]: values.duration === "yearly",
         })}
       >

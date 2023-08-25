@@ -6,7 +6,7 @@ const Success = (props: Props) => {
   return (
     <div className="lg:mt-36 lg:text-3x">
       <div className="flex justify-center mb-8">
-        <img src={thank_you_icon} />
+        <img src={thank_you_icon} alt="success" />
       </div>
       <h1 className="text-heading text-2xl font-bold text-center mb-4 l">
         Thank you

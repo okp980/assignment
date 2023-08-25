@@ -2,10 +2,8 @@ import { useField } from "formik"
 import React from "react"
 import Input, { InputProps } from "../ui/Input"
 
-type Props = {}
-
 const CustomInput = ({ label, ...props }: InputProps) => {
-  const [field, meta, helpers] = useField(props)
+  const [field, meta] = useField(props)
   return (
     <Input
       label={label}

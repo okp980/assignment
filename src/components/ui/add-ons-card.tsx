@@ -1,5 +1,4 @@
 import cn from "classnames"
-import { useField } from "formik"
 import React, { InputHTMLAttributes } from "react"
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
