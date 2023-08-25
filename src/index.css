@@ -40,4 +40,10 @@
   body {
     background-color: var(--clr-agnolia);
   }
+
+  @media (min-width: 1024px) {
+    body {
+      background-color: var(--clr-white);
+    }
+  }
 }

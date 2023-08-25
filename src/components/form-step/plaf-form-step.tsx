@@ -17,8 +17,8 @@ const PlanFormStep = (props: Props) => {
           <p className="my-2 text-xs text-strawberry-red text-start">{error}</p>
         )}
       />
-      <div className="flex flex-col gap-4">
-        <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-4 lg:gap-10">
+        <div className="flex flex-col gap-2 lg:flex-row lg:gap-5">
           {planData.plans.map((p: any, index: number) => (
             <PlanCard
               key={index}
