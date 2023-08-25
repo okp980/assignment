@@ -12,8 +12,8 @@ type Props = {
 const PlanCard = ({ image, plan, cost, duration }: Props) => {
   const { setFieldValue } = useFormikContext()
   const customClass = {
-    root: "p-3 border border-gray-300 rounded-lg lg:w-1/3 lg:h-52",
-    active: "border-marine-blue bg:light-blue",
+    root: "p-3 border border-gray-300 rounded-lg lg:w-1/3 lg:h-52 cursor-pointer hover:border-purplish-blue hover:bg-agnolia ",
+    active: "border-marine-blue bg-light-blue",
   }
 
   return (
@@ -29,7 +29,7 @@ const PlanCard = ({ image, plan, cost, duration }: Props) => {
         </div>
       )}
       <div>
-        <p className="text-heading mb-1">{plan}</p>
+        <p className=" text-heading mb-1">{plan}</p>
         <p className="text-body text-sm mb-1 ">{cost}</p>
         {duration === "yearly" && (
           <p className="text-xs mb-1 ">2 months free</p>

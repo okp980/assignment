@@ -56,7 +56,7 @@ const FormFinal = (props: Props) => {
   )
 
   return (
-    <div className="text-base">
+    <div className="text-base lg:text-lg">
       <div>
         <ul className="flex flex-col gap-2 p-4 bg-labaster rounded-xl">
           <li className="flex justify-between items-center py-3  border-b border-gray-200">
@@ -64,7 +64,7 @@ const FormFinal = (props: Props) => {
               <p className="text-heading capitalize">
                 Arcade({values.duration})
               </p>
-              <p className="text-body text-sm underline cursor-pointer hover:text-marine-blue">
+              <p className="text-body text-sm lg:text-base underline cursor-pointer hover:text-marine-blue">
                 Change
               </p>
             </div>
@@ -73,7 +73,7 @@ const FormFinal = (props: Props) => {
 
           {Object.keys(userAddOns).map((item: any, index: number) => (
             <li
-              className="flex justify-between items-center text-sm py-3"
+              className="flex justify-between items-center text-sm lg:text-base py-3"
               key={index}
             >
               <div className="text-body">{item}</div>
@@ -82,11 +82,13 @@ const FormFinal = (props: Props) => {
           ))}
         </ul>
         <ul className="my-8">
-          <li className="flex justify-between items-center text-sm">
-            <div className="text-body">
+          <li className="flex justify-between items-center text-sm lg:text-base">
+            <div className="text-body ">
               Total ({values.duration === "monthly" ? "per month" : "per year"})
             </div>
-            <div>+${TOTAL}/mo</div>
+            <div className="text-purplish-blue font-bold text:lg lg:text-xl">
+              +${TOTAL}/mo
+            </div>
           </li>
         </ul>
       </div>
