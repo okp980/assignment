@@ -16,7 +16,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 const labelClasses = {
-  root: "flex items-center gap-4 border p-3 rounded-lg",
+  root: "flex items-center gap-4 border p-3 rounded-lg lg:p-8 cursor-pointer hover:border hover:border-purplish-blue",
   normal: "border-gray-300",
   checked: "border border-purplish-blue",
 }
@@ -38,11 +38,11 @@ const AddOnCard = ({
     >
       <input type="checkbox" {...field} />
       <div className="flex-1">
-        <h5 className="text-heading text-sm">{title}</h5>
-        <h5 className=" text-body text-xs">{description}</h5>
+        <h5 className="text-heading text-sm lg:text-lg">{title}</h5>
+        <h5 className=" text-body text-xs lg:text-base">{description}</h5>
       </div>
 
-      <p className="text-purplish-blue text-xs">{cost}</p>
+      <p className="text-purplish-blue text-xs lg:text-base">{cost}</p>
     </label>
   )
 }

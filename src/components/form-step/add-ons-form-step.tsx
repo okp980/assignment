@@ -9,7 +9,7 @@ type Props = {}
 const AddOnsFormStep = (props: Props) => {
   const { values } = useFormikContext<Values>()
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 lg:gap-6">
       {addOnsData.add_ons.map((p: any, index: number) => (
         <Field
           key={index}
