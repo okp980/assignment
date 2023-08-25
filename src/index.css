@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors*/
+
+  --clr-marine-blue: hsl(213, 96%, 18%);
+  --clr-purplish-blue: hsl(243, 100%, 62%);
+  --clr-pastel-blue: hsl(228, 100%, 84%);
+  --clr-light-blue: hsl(206, 94%, 87%);
+  --clr-strawberry-red: hsl(354, 84%, 57%);
+
+  /* Neutral Colors*/
+
+  --clr-cool-gray: rgb(150, 153, 171);
+  --clr-light-gray: hsl(229, 24%, 87%);
+  --clr-agnolia: hsl(217, 100%, 97%);
+  --clr-labaster: hsl(231, 100%, 99%);
+  --clr-white: hsl(0, 0%, 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  src: url("./assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  src: url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  src: url("./assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+
+@layer base {
+  body {
+    background-color: var(--clr-agnolia);
+  }
 }

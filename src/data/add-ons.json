@@ -1,0 +1,33 @@
+{
+  "title": "Pick add-ons",
+  "description": "Add-ons help enhance your gaming experience.",
+  "add_ons": [
+    {
+      "title": "Online service",
+      "name": "online_service",
+      "description": "Access to multiplayer games",
+      "cost": {
+        "month": "+$1/mo",
+        "year": "+$10/mo"
+      }
+    },
+    {
+      "title": "Larger storage",
+      "name": "larger_storage",
+      "description": "Extra 1TB of cloud save",
+      "cost": {
+        "month": "+$2/mo",
+        "year": "+$20/mo"
+      }
+    },
+    {
+      "title": "Customizable Profile",
+      "name": "customizable_profile",
+      "description": "Custom theme on your profile",
+      "cost": {
+        "month": "+$2/mo",
+        "year": "+$20/mo"
+      }
+    }
+  ]
+}

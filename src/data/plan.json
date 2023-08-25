@@ -1,0 +1,21 @@
+{
+  "title": "Select your plan",
+  "description": "You have the option of monthly or yearly billing.",
+  "plans": [
+    {
+      "plan": "Arcade",
+      "cost": {
+        "month": "$9/mo",
+        "year": "$90/mo"
+      }
+    },
+    {
+      "plan": "Advanced",
+      "cost": { "month": "$12/mo", "year": "$120/mo" }
+    },
+    {
+      "plan": "Pro",
+      "cost": { "month": "$15/mo", "year": "$150/mo" }
+    }
+  ]
+}
