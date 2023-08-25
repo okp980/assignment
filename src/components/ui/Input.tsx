@@ -11,7 +11,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 const classes = {
-  root: "px-4 h-10 flex items-center w-full rounded-md appearance-none transition duration-300 ease-in-out text-heading placeholder:text-cool-gray text-sm focus:outline-none focus:ring-0 bg-transparent border border-gray-300 focus:border-purplish-blue",
+  root: "px-4 h-10 lg:h-14 flex items-center w-full rounded-md appearance-none transition duration-300 ease-in-out text-heading placeholder:text-cool-gray text-sm focus:outline-none focus:ring-0 bg-transparent border border-gray-300 focus:border-purplish-blue",
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
@@ -34,15 +34,17 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 
     return (
       <div className={className}>
-        <div className="flex items-center justify-between mb-1">
+        <div className="flex items-center justify-between mb-1 lg:mb-2">
           <label
             htmlFor={name}
-            className=" block text-xs text-marine-blue leading-none "
+            className=" block text-xs lg:text-base text-marine-blue leading-none "
           >
             {label}
           </label>
           {error && (
-            <p className="text-xs text-strawberry-red text-start ">{error}</p>
+            <p className="text-xs lg:text-base text-strawberry-red text-start ">
+              {error}
+            </p>
           )}
         </div>
 

@@ -2,9 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    screens: {
-      desktop: "1440px",
-    },
+    // screens: {
+    //   desktop: "1440px",
+    // },
 
     extend: {
       fontFamily: {

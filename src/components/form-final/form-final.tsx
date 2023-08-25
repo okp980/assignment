@@ -1,5 +1,4 @@
 import { useFormikContext } from "formik"
-import React from "react"
 import { Values } from "../../types/form-types"
 import plansData from "../../data/plan.json"
 import addOnsData from "../../data/add-ons.json"
@@ -84,7 +83,9 @@ const FormFinal = (props: Props) => {
         </ul>
         <ul className="my-8">
           <li className="flex justify-between items-center text-sm">
-            <div className="text-body">Total (per month)</div>
+            <div className="text-body">
+              Total ({values.duration === "monthly" ? "per month" : "per year"})
+            </div>
             <div>+${TOTAL}/mo</div>
           </li>
         </ul>

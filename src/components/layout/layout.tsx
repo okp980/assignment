@@ -15,9 +15,9 @@ type Props = {
 const Layout = ({ children, isSubmitting, currentStep, onGoBack }: Props) => {
   const headingInfo = getHeaderInfo(currentStep)
   return (
-    <div className="bg-labaster h-full font-ubuntu">
+    <div className=" font-ubuntu">
       <Navigation currentStep={currentStep} />
-      <div className="w-full fixed top-24 left-0 h-[450px] overflow-y-scroll">
+      <div className="w-full fixed top-24 left-0 h-[450px] lg:h-full lg:ml-48 overflow-y-auto lg:static">
         <LayoutCard
           title={headingInfo.title}
           description={headingInfo.description}
